@@ -22,10 +22,7 @@ def same_key(a, b) -> bool:
     Example: same_key(1, 1.0) -> True
              same_key("a", "b") -> False
     """
-    if a == b :
-        return True
-    else :
-        return False
+    return a == b and hash(a) == hash(b)
 
 
 def distinct_key_count(keys: list) -> int:
